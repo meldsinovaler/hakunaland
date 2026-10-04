@@ -28,14 +28,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
+  gap: 12px;
+  flex-wrap: nowrap;
   text-align: left;
 }
 
 .brand-logo {
-  width: 145px;
-  max-width: 100%;
+  width: 58px;
   height: auto;
   display: block;
 }
@@ -49,7 +48,7 @@ header {
 .brand-text p {
   font-size: 1.2rem;
   max-width: 650px;
-  margin: 12px 0 0;
+  margin: 8px 0 0;
   color: #6a5a45;
 }
 
@@ -171,22 +170,21 @@ footer {
 @media (max-width: 768px) {
 
   .brand {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
   }
 
   .brand-logo {
-    width: 120px;
+    width: 46px;
   }
 
   .brand-text h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 
   .brand-text p {
-    font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 0.95rem;
   }
 
   nav {
