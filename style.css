@@ -10,24 +10,52 @@ body {
   line-height: 1.6;
 }
 
+/* =========================
+   CABECERA / MARCA
+========================= */
+
 header {
   background: linear-gradient(to bottom, #edf2c4, #f7f4e8);
-  padding: 60px 20px;
-  text-align: center;
+  padding: 50px 20px;
 }
 
-header h1 {
+.hero {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.brand-logo {
+  width: 145px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.brand-text h1 {
   margin: 0;
   font-size: 3rem;
   color: #5a432c;
 }
 
-header p {
+.brand-text p {
   font-size: 1.2rem;
-  max-width: 700px;
-  margin: 15px auto 0;
+  max-width: 650px;
+  margin: 12px 0 0;
   color: #6a5a45;
 }
+
+/* =========================
+   MENÚ
+========================= */
 
 nav {
   background-color: #dce8c3;
@@ -35,6 +63,7 @@ nav {
   text-align: center;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 nav a {
@@ -47,6 +76,10 @@ nav a {
 nav a:hover {
   color: #8a6d3b;
 }
+
+/* =========================
+   CONTENIDO GENERAL
+========================= */
 
 .container {
   max-width: 1100px;
@@ -68,10 +101,18 @@ section h2 {
   font-size: 2rem;
 }
 
+/* =========================
+   SECCIÓN DESTACADA
+========================= */
+
 .highlight {
   background-color: #edf2c4;
   border-left: 6px solid #d8b24c;
 }
+
+/* =========================
+   TARJETAS
+========================= */
 
 .cards {
   display: grid;
@@ -92,9 +133,17 @@ section h2 {
   color: #6b5338;
 }
 
+/* =========================
+   LISTAS
+========================= */
+
 ul {
   padding-left: 20px;
 }
+
+/* =========================
+   ROADMAP
+========================= */
 
 .roadmap-phase {
   margin-bottom: 20px;
@@ -103,6 +152,10 @@ ul {
   border-radius: 14px;
 }
 
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
 footer {
   text-align: center;
   padding: 30px 20px;
@@ -110,18 +163,47 @@ footer {
   color: #5a432c;
   font-size: 0.95rem;
 }
+
+/* =========================
+   CELULARES Y TABLETS
+========================= */
+
 @media (max-width: 768px) {
+
   .brand {
     flex-direction: column;
     text-align: center;
   }
 
+  .brand-logo {
+    width: 120px;
+  }
+
+  .brand-text h1 {
+    font-size: 2.3rem;
+  }
+
   .brand-text p {
+    font-size: 1rem;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .brand-logo {
-    width: 120px;
+  nav {
+    padding: 12px 8px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 7px;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 22px;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
   }
 }
